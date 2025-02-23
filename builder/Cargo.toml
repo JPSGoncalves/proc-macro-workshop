@@ -6,7 +6,7 @@ edition = "2021"
 publish = false
 
 [lib]
-proc-macro = true
+proc-macro = true #This is need for a procedure macro crate
 
 [[test]]
 name = "tests"
@@ -16,4 +16,6 @@ path = "tests/progress.rs"
 trybuild = { version = "1.0.49", features = ["diff"] }
 
 [dependencies]
+quote = "1.0.38"
+syn = "2.0.98"
 # TODO
